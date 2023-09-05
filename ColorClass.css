@@ -1,7 +1,6 @@
 * {
   color: #ff0000 !important;
 }
-/* Color Classes */
 .light-blue,.hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
 .w3-amber,.w3-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
 .w3-aqua,.w3-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
