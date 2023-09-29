@@ -1,0 +1,138 @@
+@import url(′https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap′);
+@import url(′https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap′);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+:root {
+  --purple: #c792ea;
+  --blue: #82aaff;
+  --cyan: #89ddff;
+  --green: #c3e88d;
+  --yellow: #ffcb6b;
+  --orange: #f78c6c;
+  --red: #f07178;
+  --error: #ff5370;
+  --white-black: #eeffff;
+  --grey: #959DAA;
+  --sans-font: Ubuntu;
+  --serif: serif;
+  --mono: 'JetBrains Mono';
+  --gwm-font-size: 18px;
+  --gwm-border-radius: 3px;
+  --background: #1B2240;
+  --second-background: #292f4d;
+  --foreground: #efeff1;
+  --text: #959DAA;
+  --text-secondary: #c6cbd2;
+  --border: #313852;
+  --accent-color: #ad9bf6;
+  --excluded: #2f1d76;  
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--text-secondary); 
+}
+
+body {
+  padding: 4px 6px 4px 8px;
+  font-size: var(--gwm-font-size);
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+
+html {
+  padding: 0 0 0 0;
+}
+
+del {
+  opacity: 70%;
+}
+
+ul, ol {
+  margin-bottom: 0.3em !important;
+  margin-top: 0.3em !important;
+  margin-left: 1em !important;
+  font-size: var(--gwm-font-size);
+}
+ul {
+  padding-left: 0.75em !important;
+}
+ol {
+  padding-left: 1em !important;
+}
+
+p + ol {
+  padding-left: 1.75em !important;
+}
+
+p {
+  margin-bottom: 0.55em !important;
+  margin-top: 0.65em !important;
+  /*font-size: var(--gwm-font-size);*/
+}
+
+table {
+  width: 100%;
+}
+
+th, tr:nth-child(even) {
+  background-color: var(--second-background);
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  font-size: 1.8em;
+}
+h4, h5, h6 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;
+  line-height: 1.2em !important;
+  font-family: var(--sans-font);
+  font-weight: 400 !important;
+  border-bottom: none;
+}
+
+h1::after {content: "h1";}
+h2::after {content: "h2";}
+h3::after {content: "h3";}
+h4::after {content: "h4";}
+h5::after {content: "h5";}
+h6::after {content: "h6";}
+
+:is(h1,h2,h3,h4,h5,h6):after {
+  font-size: 70%;
+  opacity: 0.7;
+  margin-left: 0.2em;
+  font-family: var(--mono);
+}
+
+h1 a {color: var(--purple) !important;}
+h2 a {color: var(--blue) !important;}
+h3 a {color: var(--green) !important;}
+h4 a {color: var(--yellow) !important;}
+h5 a {color: var(--orange) !important;}
+h6 a {color: var(--red) !important;}
+
+
+mark {
+  background-color: var(--accent-color);
+  border-radius: var(--gwm-border-radius);
+}
+
+pre:has(code.language-css) {
+  margin: -10px -10px !important;
+}
+pre, code {
+  font-size: var(--gwm-font-size) !important;
+  font-family: var(--mono) !important;
+}
